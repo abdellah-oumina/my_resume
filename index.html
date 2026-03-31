@@ -1,73 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta name="robots" content="noindex">
-    <meta name="image" property="og:image" content="https://abdellah-oumina.github.io/my_resume/assets/Thumbnail.png">
-    <meta property="og:type" content="resume">
-    <meta property="og:url" content="https://abdellah-oumina.github.io/my_resume/">
-    <meta property="og:type" content="Portfolio">
-    <!-- Optional LinkedIn-specific meta tag -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional resume of Abdellah Oumina - Software Development Engineer specializing in automotive diagnostic software development">
-    <meta name="keywords" content="Abdellah Oumina, Software Engineer, Python Developer, Automotive Diagnostic, Resume, Portfolio">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Abdellah Oumina – Automotive Software Diagnostic Engineer & Python/JS Developer based in Casablanca, Morocco." />
+  <meta name="keywords"
+    content="Abdellah Oumina, Automotive Software Engineer, Python Developer, ECU Diagnostic, Portfolio" />
+  <meta property="og:title" content="Abdellah Oumina – Portfolio" />
+  <meta property="og:description" content="Automotive Software Diagnostic Engineer · Python · JavaScript" />
+  <meta property="og:image" content="assets/Thumbnail.png" />
+  <meta property="og:url" content="https://abdellah-oumina.github.io/my_resume/" />
+  <meta property="og:type" content="website" />
 
-    <title>Abdellah Oumina - Automotive Software Diagnostic Engineer</title>
-    
-    <!-- Preload critical resources -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    
-    <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <title>Abdellah Oumina – Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-    <div class="controls" role="toolbar" aria-label="Resume Controls">
-        <button href="https://drive.google.com/uc?export=download&id=1591Fu_TkMZaJ3SEC4PIXWKi7fgHlCCXN" id="languageToggle" class="control-btn" aria-label="Toggle Language">
-            <!-- <i class="fas fa-language" aria-hidden="true"></i> EN -->
-            <i class="fas fa-download" aria-hidden="true"></i>  CV
 
+<body class="dark">
+
+  <!-- ── Navbar ─────────────────────────────────────────── -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <i class="fas fa-moon"></i>
         </button>
-        <button id="darkModeToggle" class="control-btn" aria-label="Toggle Dark Mode">
-            <i class="fas fa-moon" aria-hidden="true"></i>
+
+        <button id="menuToggle" class="icon-btn menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
         </button>
+      </div>
     </div>
+    <!-- Mobile drawer -->
+    <ul class="nav-drawer" id="nav-drawer" aria-hidden="true"></ul>
+  </nav>
 
-    <div class="container">
-        <main id="resume" class="resume" role="main">
-            <!-- Content will be dynamically loaded here -->
-        </main>
+  <!-- ── Hero ───────────────────────────────────────────── -->
+  <section id="hero" class="hero" aria-label="Introduction">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1 id="hero-name" class="hero-name">Loading…</h1>
+        <h2 id="hero-title" class="hero-title"></h2>
+        <p id="hero-subtitle" class="hero-subtitle"></p>
+
+        <div class="hero-intro reveal" style="margin-bottom: 2rem;">
+          <h3 class="section-title" style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--text);"><span
+              class="accent">//</span> Introduction</h3>
+          <p id="about-text" class="about-text"></p>
+        </div>
+
+        <div class="hero-cta">
+          <button id="hero-cv-btn" class="btn-primary large">
+            <i class="fas fa-download"></i> Download CV
+          </button>
+          <a href="#projects" class="btn-ghost large">
+            View Projects <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div id="hero-contact" class="hero-contact-row"></div>
+      </div>
+      <div class="hero-photo-wrapper">
+        <img id="hero-img" src="" alt="Abdellah Oumina" class="hero-photo" />
+      </div>
     </div>
+    <!-- Stats -->
+    <div id="hero-stats" class="hero-stats-bar"></div>
+  </section>
 
-    <!-- Templates -->
-    <template id="project-modal">
-        <div class="modal" role="dialog" aria-labelledby="modal-title">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 id="modal-title"></h2>
-                    <button class="close-btn" aria-label="Close modal">&times;</button>
-                </div>
-                <div class="modal-body"></div>
-            </div>
+  <!-- ── Projects ───────────────────────────────────────── -->
+  <section id="projects" class="section" aria-label="Projects">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">//</span> Projects</h2>
+      <p class="section-sub">Click a card to explore details &amp; screenshots.</p>
+      <div id="projects-grid" class="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- ── Experience ─────────────────────────────────────── -->
+  <section id="experience" class="section" aria-label="Professional Experience">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">//</span> Experience</h2>
+      <div id="experience-container"></div>
+    </div>
+  </section>
+
+  <!-- ── Skills ─────────────────────────────────────────── -->
+  <section id="skills" class="section" aria-label="Skills">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">//</span> Skills</h2>
+      <div id="skills-container" class="skills-container"></div>
+    </div>
+  </section>
+
+  <!-- ── Education ──────────────────────────────────────── -->
+  <section id="education" class="section" aria-label="Education">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">//</span> Education</h2>
+      <div id="edu-container" class="edu-container"></div>
+    </div>
+  </section>
+
+  <!-- ── Certificates ───────────────────────────────────── -->
+  <section id="certificates" class="section" aria-label="Certificates">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">//</span> Certificates</h2>
+      <div id="certs-container" class="certs-grid"></div>
+    </div>
+  </section>
+
+  <!-- ── Languages ──────────────────────────────────────── -->
+  <section id="languages" class="section" aria-label="Languages">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">//</span> Languages</h2>
+      <div id="lang-container" class="lang-grid"></div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p id="footer-name" class="footer-brand"></p>
+      <div id="footer-links" class="footer-links"></div>
+      <p class="footer-copy">© <span id="year"></span> — Built with ❤️</p>
+    </div>
+  </footer>
+
+  <!-- ── Project Modal ──────────────────────────────────── -->
+  <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-project-title"
+    aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <img id="modal-icon" src="" alt="" class="modal-icon" />
+        <div>
+          <h3 id="modal-project-title" class="modal-title"></h3>
+          <div id="modal-tech" class="modal-tech"></div>
         </div>
-    </template>
+      </div>
+      <p id="modal-desc" class="modal-desc"></p>
+      <div id="modal-gallery" class="modal-gallery"></div>
+    </div>
+  </div>
 
-    <template id="image-preview">
-        <div class="image-preview" role="dialog" aria-label="Image Preview">
-            <button class="nav-btn prev-btn" aria-label="Previous image">&lt;</button>
-            <img src="" alt="" role="img">
-            <button class="nav-btn next-btn" aria-label="Next image">&gt;</button>
-            <button class="close-btn" aria-label="Close preview">&times;</button>
-            <div class="image-counter" aria-live="polite"></div>
-        </div>
-    </template>
+  <!-- ── Image Lightbox ─────────────────────────────────── -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" aria-hidden="true">
+    <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+    <img id="lb-img" src="" alt="Preview" class="lb-img" />
+    <button class="lb-nav lb-next" id="lb-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+    <button class="lb-close" id="lb-close" aria-label="Close preview">&times;</button>
+    <div class="lb-counter" id="lb-counter"></div>
+  </div>
 
-    <!-- Scripts -->
-    <script src="app.js" defer></script>
+  <!-- Scripts (order matters: data first, then app) -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
 </body>
+
 </html>
-
-
