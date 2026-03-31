@@ -174,7 +174,7 @@ const DATA = {
     {
       category: "Key Competencies",
       icon: "fa-lightbulb",
-      items: ["Automotive Diagnostic", "Task Automation", "Data Analysis", "V-Model", "Problem Solving", "Meeting Facilitation"],
+      items: ["Automotive Diagnostic", "Task Automation", "Data Analysis", "V-Model", "Problem Solving",],
     },
   ],
 
