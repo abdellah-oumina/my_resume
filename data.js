@@ -27,7 +27,7 @@ const DATA = {
   stats: [
     { value: "4+", label: "Years in Automotive" },
     { value: "8+", label: "Automation diagnostic tools" },
-    { value: "30%", label: "Reduction in Analysis/Development/Validation Time" },
+    { value: "30%", label: "Time Reduction" },
     { value: "20%", label: "Productivity Increase" },
   ],
 
