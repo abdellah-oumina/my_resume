@@ -138,7 +138,7 @@ const DATA = {
     {
       name: "Smart-Home System",
       icon: "assets/Projects/Smart-Home-Control-App/icon.png",
-      tech: ["Android Studio", "Firebase", "Kotlin", "PCB"],
+      tech: ["Firebase", "Kotlin", "PCB","Android Studio"],
       description: "End of studies project (PFE): complete home automation control system with Android application, Firebase real-time database, and custom PCB for residential automation.",
       screenshots: Array.from({ length: 12 }, (_, i) => `assets/Projects/Smart-Home-Control-App/screenshot-${i + 1}.png`),
     },
