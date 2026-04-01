@@ -57,10 +57,10 @@ const DATA = {
       title: "Automotive Diagnostic Engineer – Stellantis",
       company: "Capgemini",
       location: "Casablanca, Morocco · Hybrid",
-      period: "March 2023 – August 2025",
+      period: "March 2022 – August 2025",
       timeline: [
         {
-          period: "March 2023 – August 2025",
+          period: "March 2022 – August 2025",
           role: "Automotive Software Engineer",
           items: [
             "Expertise in DIAGBOX and WiTECH diagnostic tools for Stellantis vehicles.",
