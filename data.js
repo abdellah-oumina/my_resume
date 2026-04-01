@@ -25,8 +25,8 @@ const DATA = {
 
   /* ── Stats (shown on hero) ───────────────────────────── */
   stats: [
-    { value: "4+", label: "Years in Automotive" },
-    { value: "8+", label: "Automation diagnostic tools" },
+    { value: "4+", label: "Years in Automotive Diagnostic" },
+    { value: "8+", label: "Solutions for Diagnostic Engineering" },
     { value: "30%", label: "Time Reduction (Analysis/Dev/Validation)" },
     { value: "20%", label: "Productivity Increase" },
   ],
