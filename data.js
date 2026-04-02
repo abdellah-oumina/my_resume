@@ -8,7 +8,7 @@ const DATA = {
   /* ── Personal ─────────────────────────────────────────── */
   name: "ABDELLAH OUMINA",
   title: "Automotive Diagnostic Engineer",
-  subtitle: "Problem Solver · Python Developer",
+  subtitle: "· Problem Solver · Python Developer",
   image: "assets/my_picture.jpg",
   cvLink: "https://drive.google.com/uc?export=download&id=1591Fu_TkMZaJ3SEC4PIXWKi7fgHlCCXN",
 
