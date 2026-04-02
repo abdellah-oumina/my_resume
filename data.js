@@ -26,7 +26,7 @@ const DATA = {
   /* ── Stats (shown on hero) ───────────────────────────── */
   stats: [
     { value: "4+", label: "Years in Automotive Diagnostic" },
-    { value: "8+", label: "Solutions for Diagnostic Engineering" },
+    { value: "8+", label: "Stellantis Automotive Diagnostic Solutions" },
     { value: "30%", label: "Time Reduction (Analysis/Dev/Validation)" },
     { value: "20%", label: "Productivity Increase" },
   ],
