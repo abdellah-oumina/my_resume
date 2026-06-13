@@ -87,13 +87,6 @@ const DATA = {
   /* ── Projects ────────────────────────────────────────── */
   projects: [
     {
-      name: "iTraceTool",
-      icon: "assets/Projects/iTraceTool/icon.png",
-      tech: ["Python", "flutter"],
-      description: "Application for interpretation and visualization of encrypted <strong>DIAGBOX</strong> logs. Provides an intuitive interface to analyze complex diagnostic data, generate test scripts, track data and flowcharts....",
-      screenshots: Array.from({ length: 14 }, (_, i) => `assets/Projects/iTraceTool/screenshot-${i + 1}.png`),
-    },
-    {
       name: "Spy-Tracker For Unit-Test",
       icon: "assets/Projects/Spy-Tracker/icon.png",
       tech: ["NodeJS", "ElectronJS", "JavaScript"],
@@ -120,6 +113,13 @@ const DATA = {
       tech: ["python", "tkinter"],
       description: "Specialized tool to quickly locate and suggest the most relevant automotive labels. Allows users to search for any term or parameter, ensuring consistency and efficiency during the preparation of delivery files.",
       screenshots: Array.from({ length: 3 }, (_, i) => `assets/Projects/Search-Engine-For-Automotive-labels/screenshot-${i + 1}.png`),
+    },
+        {
+      name: "iTrace Tool",
+      icon: "assets/Projects/iTraceTool/icon.png",
+      tech: ["Python", "flutter"],
+      description: "Application for interpretation and visualization <strong>DIAGBOX</strong> logs. Provides an intuitive interface to analyze complex diagnostic data, generate test scripts, track data and flowcharts....",
+      screenshots: Array.from({ length: 14 }, (_, i) => `assets/Projects/iTraceTool/screenshot-${i + 1}.png`),
     },
     {
       name: "Jira-Table-Creator",
