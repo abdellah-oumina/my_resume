@@ -90,7 +90,7 @@ const DATA = {
       name: "iTraceTool",
       icon: "assets/Projects/iTraceTool/icon.png",
       tech: ["Python", "flutter"],
-      description: "Application for interpretation and visualization of encrypted <strong>DIAGBOX</strong> logs. Provides an intuitive interface to analyze complex diagnostic data, generate test scripts, track data and flowcharts, and display key vehicle info (VIN, architecture...).",
+      description: "Application for interpretation and visualization of encrypted <strong>DIAGBOX</strong> logs. Provides an intuitive interface to analyze complex diagnostic data, generate test scripts, track data and flowcharts....",
       screenshots: Array.from({ length: 14 }, (_, i) => `assets/Projects/iTraceTool/screenshot-${i + 1}.png`),
     },
     {
