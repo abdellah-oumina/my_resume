@@ -97,14 +97,14 @@ const DATA = {
       name: "COMREPA Extension",
       icon: "assets/Projects/COMREPA-Extension/icon.png",
       tech: ["JavaScript", "HTML", "CSS"],
-      description: "Innovative Chrome/Edge extension to optimize navigation and access to key information in a Stellantis project context.<br><br><strong>HUDSON_FIXER</strong>: Resolves navigation issues on the Stellantis Hudson site.<br><strong>FLOWCHART_DOC</strong>: User guide for flowcharts in D2C.<br><strong>DOCINFO_DIRECTORY</strong>: Organizes RCDs & CRAs.<br><strong>JIRA_EXT & SHAREPOINT_EXT</strong>: Simplified access to project data.",
-      screenshots: Array.from({ length: 5 }, (_, i) => `assets/Projects/COMREPA-Extension/screenshot-${i + 1}.png`),
+      description: "Innovative Chrome/Edge extension to optimize navigation and access to key informations.",
+      screenshots: Array.from({ length: 2 }, (_, i) => `assets/Projects/COMREPA-Extension/screenshot-${i + 1}.png`),
     },
     {
       name: "FL-Maker",
       icon: "assets/Projects/FL-Maker/icon.png",
       tech: ["Python", "flet"],
-      description: "Automated <strong>Delivery Note (Fiche de Livraison)</strong> generator in D2Center. Automatically monitors projects and files, providing a detailed report of each addition, deletion, or modification with the file name, modification type, revision number, and description.",
+      description: "Automated <strong>Delivery Note (Fiche de Livraison)</strong> generator in Eclipse-D2Center. Automatically monitors projects and files, providing a detailed report of each addition, deletion, or modification with the file name, modification type, revision number, and description.",
       screenshots: Array.from({ length: 6 }, (_, i) => `assets/Projects/FL-Maker/screenshot-${i + 1}.png`),
     },
     {
