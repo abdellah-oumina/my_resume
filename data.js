@@ -149,7 +149,7 @@ const DATA = {
     {
       category: "Automotive Diagnostic",
       icon: "fa-car",
-      items: ["Digalyser", "DIAGBOX", "WiTech", "ODXVIEWER", "CANdelaStudio", "DOTI", "SPY&SIM", "Corvet", "DOCINFO", "D2CENTER"],
+      items: ["Diagalyser","ODXVIEWER","CANdelaStudio", "DIAGBOX", "WiTech", "DOTI", "SPY&SIM", "Corvet", "DOCINFO", "D2CENTER"],
     },
     {
       category: "Protocols & Standards",
