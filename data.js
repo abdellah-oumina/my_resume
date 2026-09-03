@@ -1,6 +1,7 @@
 /**
  * ============================================================
  *  PORTFOLIO DATA — Edit everything here, nothing else needed
+ *  Aligned with CV_Abdellah_Oumina.pdf
  * ============================================================
  */
 const DATA = {
@@ -18,7 +19,7 @@ const DATA = {
     location: "Rabat, Morocco",
     linkedin: "https://www.linkedin.com/in/abdellah-oumina",
     github: "https://github.com/abdellah-oumina",
-    website: "https://abdellah-oumina.com/my_resume",
+    website: "https://abdellah-oumina.github.io/my_resume/",
   },
 
   summary: `Automotive Diagnostic Engineer with <strong>4+ years of experience</strong> in diagnostic software at <strong>Stellantis</strong>. Highly skilled in ECU requirement analysis and development, communication protocols (UDS, KWP2000, CAN, LIN, DoIP), I specialize in identifying technical bottlenecks and building innovative internal tools that eliminate manual errors, accelerate validation cycles, and significantly boost team productivity.`,
@@ -35,7 +36,7 @@ const DATA = {
   experience: [
     {
       title: "Automotive Engineer – Stellantis",
-      company: "AFD Tech",
+      company: "AFD.TECH (part of Accenture)",
       location: "Rabat, Morocco · Hybrid",
       period: "September 2025 – Present",
       timeline: [
@@ -43,41 +44,59 @@ const DATA = {
           period: "Sept 2025 – Present",
           role: "Diagnostic Software Engineer",
           items: [
-            "Analysis and resolution of non-compliant behaviors in diagnostic operations, including spare part replacement/compatibility, software downloads, configuration.",
+            "Analysis and resolution of non-compliant behaviors in diagnostic operations, including spare part replacement/compatibility, software downloads, telecoding and configuration.",
             "Monitoring, testing, and validation of new releases of the DIAGBOX diagnostic tool.",
             "Development and deployment of temporary (palliative) solutions for the after-sales network on affected vehicles.",
             "Analysis of ECU communication frames in accordance with OBD standards (UDS, KWP2000) over CAN and LIN networks.",
             "Interpretation and analysis of communication logs based on ECU technical specifications.",
-            "Communication of incidents to developers/experts via JIRA and resolution follow-up.",
+            "Interpretation of electrical diagrams for troubleshooting and optimization on Stellantis vehicles.",
+            "Maintenance of diagnostic software (DIAGBOX, WiTech) and of the communication interfaces, both software and hardware.",
+            "Analysis and maintenance of operating systems to ensure optimal performance of the diagnostic environment.",
+             "Communication of incidents to developers/experts via JIRA and resolution follow-up.",
           ],
         },
       ],
     },
     {
       title: "Automotive Diagnostic Engineer – Stellantis",
-      company: "Capgemini",
+      company: "Capgemini Engineering",
       location: "Casablanca, Morocco · Hybrid",
       period: "March 2022 – August 2025",
       timeline: [
         {
-          period: "March 2022 – August 2025",
+          period: "March 2023 – August 2025",
           role: "Automotive Software Engineer",
           items: [
-            "Expertise in DIAGBOX and WiTECH diagnostic tools for Stellantis vehicles.",
+            "Expertise in DIAGBOX and WiTech diagnostic tools for Stellantis vehicles.",
             "Full proficiency in the V-model lifecycle, from requirements gathering to final delivery.",
             "Analysis and processing of ECU technical data, including DTC Matrix, DOTE, ODX messaging, and PAG.",
+            "Writing of specification documents for DIAGBOX and WiTech diagnostic requirements.",
             "Development of diagnostic modules using DSD, GPC, and Flowchart environments.",
             "Execution of automated unit tests using the SPY&SIM simulator, ensuring compliance with development standards.",
             "Management of anomalies through JIRA, including log analysis, issue reproduction, and implementation of corrective actions.",
+            "Ensuring the quality of deliverables to meet project standards and client expectations.",
+            "Collaboration with the client in technical meetings to address and resolve input data issues.",
+            "Mentoring of team members, providing technical guidance to ensure the continuity of development tasks.",
+          ],
+        },
+        {
+          period: "March 2022 – March 2023",
+          role: "Automation of Development Processes",
+          items: [
+            "Design of internal applications to automate the filling of diagnostic deliverables and delivery notes (FL-Maker) in Eclipse-D2Center.",
+            "Automation of data classification and extraction from the DOTI server into Excel using Python and Selenium.",
+            "Development of graphical interfaces for JIRA issue analysis and automated table generation (Jira-Table-Creator).",
+            "Implementation of frame tracking between DIAGBOX and SPY&SIM to accelerate unit tests and reduce validation errors.",
+            "Use of Python, NodeJS, ElectronJS, PyQt and Selenium for efficient automation and optimization.",
           ],
         },
         {
           period: "",
           role: "Key Achievements",
           items: [
-            "Enhanced DIAGBOX and WiTECH diagnostic tools through the development of custom internal tools (see Projects section).",
+            "Enhanced DIAGBOX and WiTech diagnostic tools through the development of custom internal tools (see Projects section).",
             "Reduced analysis, development, and validation timelines by 30% through process optimization and automation.",
-            "Increased team efficiency by 20%",
+            "Increased team efficiency by 20%.",
           ],
         },
       ],
@@ -90,14 +109,14 @@ const DATA = {
       name: "Spy-Tracker For Unit-Test",
       icon: "assets/Projects/Spy-Tracker/icon.png",
       tech: ["NodeJS", "ElectronJS", "JavaScript"],
-      description: "Frame tracking tool between <strong>DIAGBOX</strong> and <strong>Spy&SIM</strong>. Captures and analyzes every request sent by DIAGBOX to the ECU, automatically generating accurate responses — accelerating unit tests and reducing validation errors.",
+      description: "Frame tracking tool between <strong>DIAGBOX</strong> and <strong>SPY&SIM</strong>. Captures and analyzes every request sent by DIAGBOX to the ECU, automatically generating accurate responses — accelerating unit tests and reducing validation errors.",
       screenshots: Array.from({ length: 3 }, (_, i) => `assets/Projects/Spy-Tracker/screenshot-${i + 1}.png`),
     },
     {
       name: "COMREPA Extension",
       icon: "assets/Projects/COMREPA-Extension/icon.png",
       tech: ["JavaScript", "HTML", "CSS"],
-      description: "Innovative Chrome/Edge extension to optimize navigation and access to key informations.",
+      description: "Innovative Chrome/Edge extension to optimize navigation and access to key information.",
       screenshots: Array.from({ length: 2 }, (_, i) => `assets/Projects/COMREPA-Extension/screenshot-${i + 1}.png`),
     },
     {
@@ -110,15 +129,15 @@ const DATA = {
     {
       name: "Search Engine",
       icon: "assets/Projects/Search-Engine-For-Automotive-labels/icon.png",
-      tech: ["python", "tkinter"],
+      tech: ["Python", "tkinter"],
       description: "Specialized tool to quickly locate and suggest the most relevant automotive labels. Allows users to search for any term or parameter, ensuring consistency and efficiency during the preparation of delivery files.",
       screenshots: Array.from({ length: 3 }, (_, i) => `assets/Projects/Search-Engine-For-Automotive-labels/screenshot-${i + 1}.png`),
     },
-        {
+    {
       name: "iTrace Tool",
       icon: "assets/Projects/iTraceTool/icon.png",
       tech: ["Python", "flutter"],
-      description: "Application for interpretation and visualization <strong>DIAGBOX</strong> logs. Provides an intuitive interface to analyze complex diagnostic data, generate test scripts, track data and flowcharts....",
+      description: "Application for interpretation and visualization of <strong>DIAGBOX</strong> logs. Provides an intuitive interface to analyze complex diagnostic data, generate test scripts, track data and flowcharts....",
       screenshots: Array.from({ length: 3 }, (_, i) => `assets/Projects/iTraceTool/screenshot-${i + 1}.png`),
     },
     {
@@ -138,7 +157,7 @@ const DATA = {
     {
       name: "Smart-Home System",
       icon: "assets/Projects/Smart-Home-Control-App/icon.png",
-      tech: ["Firebase", "Kotlin", "PCB","Android Studio"],
+      tech: ["Firebase", "Kotlin", "PCB", "Android Studio"],
       description: "End of studies project (PFE): complete home automation control system with Android application, Firebase real-time database, and custom PCB for residential automation.",
       screenshots: Array.from({ length: 12 }, (_, i) => `assets/Projects/Smart-Home-Control-App/screenshot-${i + 1}.png`),
     },
@@ -149,12 +168,12 @@ const DATA = {
     {
       category: "Automotive Diagnostic",
       icon: "fa-car",
-      items: ["Diagalyser","ODXVIEWER","CANdelaStudio", "DIAGBOX", "WiTech", "DOTI", "SPY&SIM", "Corvet", "DOCINFO", "D2CENTER"],
+      items: ["DIAGBOX", "WiTech", "SPY&SIM", "Diagalyser", "ODX Viewer", "CANdela Studio", "D2CENTER", "DOTI", "DOCINFO", "Corvet"],
     },
     {
       category: "Protocols & Standards",
       icon: "fa-network-wired",
-      items: ["DoIP","UDS", "KWP2000", "Bus CAN", "Bus LIN"],
+      items: ["UDS", "KWP2000", "DoIP", "Bus CAN", "Bus LIN", "UART", "SPI", "I2C"],
     },
     {
       category: "Programming",
@@ -169,12 +188,12 @@ const DATA = {
     {
       category: "Tools & DevOps",
       icon: "fa-tools",
-      items: ["Git", "TortoiseSVN", "JIRA", "SharePoint", "VS Code", "PyCharm", "LabVIEW"],
+      items: ["Git", "TortoiseSVN", "JIRA", "SharePoint", "VS Code", "PyCharm", "LabVIEW", "Microsoft Office"],
     },
     {
       category: "Key Competencies",
       icon: "fa-lightbulb",
-      items: ["Software Defined Vehicle (SDV)", "Automotive Diagnostic", "Task Automation", "Data Analysis", "V-Model", "Problem Solving",],
+      items: ["Software Defined Vehicle (SDV)", "Automotive Diagnostic", "V-Model", "Task Automation", "Data Analysis", "Problem Solving"],
     },
   ],
 
@@ -183,9 +202,9 @@ const DATA = {
     {
       degree: "Master of Engineering",
       field: "Embedded Systems & Robotics",
-      institution: "University of Sciences & Technologies",
-      period: "2018 – 2020",
-      location: "Hoceima, Morocco",
+      institution: "University of Sciences and Technologies",
+      period: "09/2018 – 07/2020",
+      location: "Al Hoceima, Morocco",
     },
     {
       degree: "Bachelor's Degree",
@@ -222,6 +241,6 @@ const DATA = {
   languages: [
     { lang: "Arabic", level: "Native" },
     { lang: "French", level: "Professional" },
-    { lang: "English", level: "Technical" },
+    { lang: "English", level: "Professional" },
   ],
 };
