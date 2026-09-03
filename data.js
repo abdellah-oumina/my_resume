@@ -154,7 +154,7 @@ const DATA = {
     {
       category: "Protocols & Standards",
       icon: "fa-network-wired",
-      items: ["UDS", "KWP2000", "Bus CAN", "Bus LIN"],
+      items: ["DoIP","UDS", "KWP2000", "Bus CAN", "Bus LIN"],
     },
     {
       category: "Programming",
@@ -174,7 +174,7 @@ const DATA = {
     {
       category: "Key Competencies",
       icon: "fa-lightbulb",
-      items: ["Automotive Diagnostic", "Task Automation", "Data Analysis", "V-Model", "Problem Solving",],
+      items: ["Software Defined Vehicle (SDV)", "Automotive Diagnostic", "Task Automation", "Data Analysis", "V-Model", "Problem Solving",],
     },
   ],
 
